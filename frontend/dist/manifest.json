@@ -1,0 +1,13 @@
+{
+  "name": "AgroSmart",
+  "short_name": "AgroSmart",
+  "description": "Smart farming platform with crop guidance, live market prices, weather forecasting, and AI assistance for farmers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9f7",
+  "theme_color": "#227649",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
