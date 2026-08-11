@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --surface: 255 255 255;
+  --surface-raised: 255 255 255;
+  --surface-sunken: 248 249 247;
+  --text-primary: 36 38 31;
+  --text-secondary: 94 102 86;
+  --border-subtle: 238 240 236;
+}
+
+.dark {
+  --surface: 21 22 15;
+  --surface-raised: 30 32 23;
+  --surface-sunken: 15 16 10;
+  --text-primary: 238 240 236;
+  --text-secondary: 155 163 146;
+  --border-subtle: 54 58 50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(var(--surface));
+  color: rgb(var(--text-primary));
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif;
+}
+
+::selection {
+  background: rgb(var(--surface-raised));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

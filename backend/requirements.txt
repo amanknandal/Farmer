@@ -1,0 +1,14 @@
+Flask
+Flask-SQLAlchemy
+Flask-CORS
+Flask-Migrate
+Flask-Bcrypt
+Flask-Limiter
+PyJWT
+psycopg2-binary
+requests
+ollama
+python-dotenv
+gunicorn
+pytest
+pytest-flask
